@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi" suppressHydrationWarning>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/smaregi-project-management/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
+    <title>Smaregi Project Management</title>
+    <script>
+      // Áp class .dark trước khi React mount để tránh nháy sáng→tối khi F5.
+      // Phải khớp logic với src/shared/hooks/use-theme.tsx.
+      ;(() => {
+        try {
+          const stored = localStorage.getItem('smaregi-pm.theme')
+          const isDark =
+            stored === 'dark' ||
+            ((stored === 'system' || !stored) &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', isDark)
+          document.documentElement.style.colorScheme = isDark ? 'dark' : 'light'
+        } catch {
+          /* localStorage bị chặn — bỏ qua, React sẽ tự xử lý */
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/smaregi-project-management/assets/index-CLM-uhaF.js"></script>
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/react-vendor-BNmTiJ-I.js">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/messages-Dwt4OSY7.js">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/createLucideIcon-BTnvg01A.js">
+    <link rel="stylesheet" crossorigin href="/smaregi-project-management/assets/index-s-vLXnr5.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
