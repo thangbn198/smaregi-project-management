@@ -1,1 +1,0 @@
-import{t as e}from"./messages-Dwt4OSY7.js";import{a as t,i as n}from"./schemas-BO6sKXJ4.js";var r=t().trim().min(1,e.validation.emailRequired).email(e.validation.emailInvalid).toLowerCase(),i=n({email:r,password:t().min(1,e.validation.passwordRequired)}),a=n({email:r});export{a as n,i as t};

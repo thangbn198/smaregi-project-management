@@ -7,6 +7,15 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
     <title>Smaregi Project Management</title>
+    <meta name="description" content="Kanban project management for Sanan/Smaregi teams." />
+
+    <!-- PWA. `manifest` + `apple-touch-icon` là hai đường khác nhau: iOS bỏ qua
+         icon trong manifest khi thêm vào màn hình chính. -->
+    <link rel="manifest" href="/smaregi-project-management/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/smaregi-project-management/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Smaregi PM" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>
       // Áp class .dark trước khi React mount để tránh nháy sáng→tối khi F5.
       // Phải khớp logic với src/shared/hooks/use-theme.tsx.
@@ -24,13 +33,13 @@
         }
       })()
     </script>
-    <script type="module" crossorigin src="/smaregi-project-management/assets/index-CsNz1RWh.js"></script>
+    <script type="module" crossorigin src="/smaregi-project-management/assets/index-DT46PdN1.js"></script>
     <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/rolldown-runtime-hePW80VL.js">
     <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/react-vendor-BNmTiJ-I.js">
-    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/messages-Dwt4OSY7.js">
-    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/createLucideIcon-BTnvg01A.js">
-    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/empty-state-DNeI1vxh.js">
-    <link rel="stylesheet" crossorigin href="/smaregi-project-management/assets/index-CAGx3Pbe.css">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/firebase-config-Ch6mRaQ0.js">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/createLucideIcon-CwmTvXmJ.js">
+    <link rel="modulepreload" crossorigin href="/smaregi-project-management/assets/empty-state-CZg3Kdis.js">
+    <link rel="stylesheet" crossorigin href="/smaregi-project-management/assets/index-Biu0sqt7.css">
   </head>
   <body>
     <div id="root"></div>
