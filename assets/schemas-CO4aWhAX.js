@@ -1,1 +1,0 @@
-import{a as e,i as t}from"./schemas-BO6sKXJ4.js";function n(t){return e().trim().min(1,t.emailRequired).email(t.emailInvalid).toLowerCase()}function r(r){return t({email:n(r),password:e().min(1,r.passwordRequired)})}function i(e){return t({email:n(e)})}export{i as n,r as t};
